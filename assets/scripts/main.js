@@ -99,6 +99,9 @@ showAllRollsButton.addEventListener('click', function() {
 })
 
 resetButton.addEventListener('click', function(){
+    
+    diceUpperLimit.value = 6;
+    
     diceRolled.value = 1;
     
     dieRolls = [];
