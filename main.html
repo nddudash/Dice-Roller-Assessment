@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dice Roller</title>
+        <link rel="stylesheet" href="/./assets/styles/main.css">
+    </head>
+
+    <body>
+
+        <!--Extra Credit #3-->
+        <label for="diceUpperLimit">What's the Highest Number on Your Dice?</label>
+
+        <input id="diceUpperLimit" type="number">
+
+        <br>
+
+        <label for="diceRolled">How Many Dice Would You like To Roll?</label>
+        
+        <input id="diceRolled" type="number" min="0"> 
+
+        <button id="diceRollButton" class="button">Roll!</button>
+
+        <p id="diceRollTotalDisplay"></p>
+
+        <button id="showAllRollsButton" class="button">Show All Rolls!</button>
+        
+        <ol id="showAllRollsList">
+
+        </ol>
+
+        <button id="resetButton">Reset!</button>
+
+        <script src="/./assets/scripts/main.js"></script>
+    </body>
+</html>
