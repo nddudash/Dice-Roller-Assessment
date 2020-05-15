@@ -9,28 +9,54 @@
 
     <body>
 
-        <!--Extra Credit #3-->
-        <label for="diceUpperLimit">What's the Highest Number on Your Dice?</label>
+        <div id="pageWrapper">
+            
+            <!--Extra Credit #3-->
+            <div class="FirstBlockThingy">
 
-        <input id="diceUpperLimit" type="number">
+                <label for="diceUpperLimit" class="inputLabel">What's the Highest Number on Your Dice?</label>
 
-        <br>
+                <br>
+                
+                <input id="diceUpperLimit" type="number" class="input">
 
-        <label for="diceRolled">How Many Dice Would You like To Roll?</label>
-        
-        <input id="diceRolled" type="number" min="0"> 
+                <br>
 
-        <button id="diceRollButton" class="button">Roll!</button>
+                <label for="diceRolled" class="inputLabel">How Many Dice Would You like To Roll?</label>
 
-        <p id="diceRollTotalDisplay"></p>
+                <br>
+                
+                <input id="diceRolled" type="number" min="0" class="input"> 
 
-        <button id="showAllRollsButton" class="button">Show All Rolls!</button>
-        
-        <ol id="showAllRollsList">
+            </div>
 
-        </ol>
+            <div class="diceRollButtonContainer">
+                
+                <button id="diceRollButton" class="button">Roll!</button>
 
-        <button id="resetButton">Reset!</button>
+                <p id="diceRollTotalDisplay"></p>
+
+            </div>
+
+            <div class="showAllRollsContainer">
+                
+                <button id="showAllRollsButton" class="button">Show All Rolls!</button>
+
+                <div class = "showAllRollsDiceContainer">
+                
+                    <ol id="showAllRollsList">
+
+                    </ol>
+                    
+                </div>
+            </div>
+
+            <div class="ResetContainer">
+
+                <button id="resetButton" class="button">Reset!</button>
+                
+            </div>
+        </div>
 
         <script src="/./assets/scripts/main.js"></script>
     </body>

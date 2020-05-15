@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Special+Elite&display=swap');
+
+* {
+    box-sizing: border-box;
+    position: relative;
+}
+
+html {
+    background: rgba(20, 5, 2, 0.95)
+}
+
+#pageWrapper {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 1;
+    max-width: 1200px;
+    min-width: 400px;
+    margin: 5px auto;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(204, 167, 110, 0.8)
+}
+
+body .FirstBlockThingy {
+    text-align: center;
+}
+
+body .diceRollButtonContainer {
+    text-align: center;
+    align-self: center;
+}
+
+.diceRollButtonContainer #diceRollTotalDisplay {
+    font-size: 1.5em;
+}
+
+body {
+    font-family: 'Caveat', cursive;
+    font-size: 35px;
+}
+
+body .button {
+    background-color: rgba(240, 226, 163, 0.9);
+    border: none;
+    height: 50px;
+    width: 120px;
+    font-family: 'Special Elite', cursive;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+}
+
+body .input {
+    background-color: rgba(240, 226, 163, 0.9);
+    margin: 10px auto;
+    height: 50px;
+    width: 100px;
+    top: -10px;
+    text-align: center;
+    font-size: 45px;
+    font-family: 'Caveat', cursive;
+}
+
+body #showAllRollsButton {
+    width: 250px;
+    justify-self: center;
+}
+
+.showAllRollsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.showAllRollsDiceContainer {
+    flex: 1 1 80%;
+    flex-flow: row wrap;
+}
+
+.showAllRollsDiceContainer #showAllRollsList {
+    list-style-type: upper-roman;
+}
+
+.showAllRollsDiceContainer .dice {
+    display: inline-flex;
+    height: 65px;
+    width: 65px;
+    text-align: center;
+    align-self: center;
+    font-size: 55px;
+    background-color: rgb(255, 240, 210);
+    margin: 25px;
+}
+
+body #resetButton {
+    margin: 0px 0px 25px 0px;
+}
