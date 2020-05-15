@@ -20,15 +20,15 @@ function rollTheDice(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min; 
 }
 
-let dieRolls = [] //Rubric #1
+let dieRolls = [];
 
 diceUpperLimit.value = 6;
 
 diceRolled.value = 1;
 
 
-diceRollButton.addEventListener("click", function() { //Rubric #2
-
+diceRollButton.addEventListener("click", function() { 
+    
     if (diceRolled.value === "0" || diceRolled.value === "") {
         window.alert("Please enter how many dice you would like to roll!");
     }
@@ -38,19 +38,17 @@ diceRollButton.addEventListener("click", function() { //Rubric #2
 
         showAllRollsList.innerHTML = '';
 
-        let numDice = diceRolled.value; //Rubric #3
-
+        let numDice = diceRolled.value;
+        
         let counter = 0;
 
-        while (counter < numDice) { //Rubric #4
+        while (counter < numDice) {
             
             let currentDice = counter;
 
-            currentDiceValue = rollTheDice(1, diceUpperLimit);
+            currentDiceValue = rollTheDice(1, diceUpperLimit.value);
 
-            dieRolls.push(currentDiceValue); //Rubric #5
-            
-            console.log(currentDiceValue);
+            dieRolls.push(currentDiceValue);
 
             counter ++;
         }
@@ -80,7 +78,7 @@ diceRollButton.addEventListener("click", function() { //Rubric #2
     }
 })
 
-showAllRollsButton.addEventListener('click', function() { //Rubric #7
+showAllRollsButton.addEventListener('click', function() {
 
     showAllRollsList.innerHTML = '';
 
@@ -100,8 +98,7 @@ showAllRollsButton.addEventListener('click', function() { //Rubric #7
     }
 })
 
-resetButton.addEventListener('click', function(){ //Extra Credit #1
-
+resetButton.addEventListener('click', function(){
     diceRolled.value = 1;
     
     dieRolls = [];
